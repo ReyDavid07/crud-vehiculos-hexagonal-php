@@ -25,3 +25,6 @@ Proyecto base alineado con las guías del curso:
 - feature/recuperacion-password
 - feature/crudl-vehiculo
 - docs/pdf-entrega
+
+## Modulo Login
+Se implemento inicio de sesion con validacion de credenciales y sesiones PHP.

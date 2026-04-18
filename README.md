@@ -25,3 +25,6 @@ Proyecto base alineado con las guías del curso:
 - feature/recuperacion-password
 - feature/crudl-vehiculo
 - docs/pdf-entrega
+
+## Modulo Usuarios
+Se implemento CRUD de usuarios siguiendo la guia y arquitectura hexagonal.

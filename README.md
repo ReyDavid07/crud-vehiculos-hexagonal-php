@@ -25,3 +25,6 @@ Proyecto base alineado con las guías del curso:
 - feature/recuperacion-password
 - feature/crudl-vehiculo
 - docs/pdf-entrega
+
+## Modulo Vehiculos
+Se implemento CRUDL de vehiculos con persistencia en MySQL.

@@ -27,6 +27,9 @@ Proyecto base alineado con las guías del curso:
 - docs/pdf-entrega
 
 
+## Entrega Final
+Repositorio: https://github.com/ReyDavid07/crud-vehiculos-hexagonal-php
+=======
 ## Modulo Vehiculos
 Se implemento CRUDL de vehiculos con persistencia en MySQL.
 =======
@@ -38,6 +41,7 @@ Se implemento inicio de sesion con validacion de credenciales y sesiones PHP.
 =======
 ## Modulo Usuarios
 Se implemento CRUD de usuarios siguiendo la guia y arquitectura hexagonal.
+
 
 
 

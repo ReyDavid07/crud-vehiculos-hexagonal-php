@@ -1,0 +1,3 @@
+<?php
+declare(strict_types=1);
+final class CreateVehiculoService implements CreateVehiculoUseCase { private SaveVehiculoPort $savePort; private GetVehiculoByPlacaPort $placaPort; public function __construct(SaveVehiculoPort $savePort, GetVehiculoByPlacaPort $placaPort){$this->savePort=$savePort;$this->placaPort=$placaPort;} public function execute(CreateVehiculoCommand $command): VehiculoModel { $placa = new VehiculoPlaca((string) $command->get('placa')); if ($this->placaPort->getByPlaca($placa)!==null){ throw VehiculoAlreadyExistsException::becausePlacaAlreadyExists($placa->value()); } return $this->savePort->save(VehiculoApplicationMapper::fromCreateCommandToModel($command)); } }

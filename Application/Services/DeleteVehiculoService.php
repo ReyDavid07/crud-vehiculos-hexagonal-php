@@ -1,0 +1,3 @@
+<?php
+declare(strict_types=1);
+final class DeleteVehiculoService implements DeleteVehiculoUseCase { private DeleteVehiculoPort $deletePort; private GetVehiculoByIdPort $idPort; public function __construct(DeleteVehiculoPort $deletePort, GetVehiculoByIdPort $idPort){$this->deletePort=$deletePort;$this->idPort=$idPort;} public function execute(DeleteVehiculoCommand $command): void { $id = VehiculoApplicationMapper::fromDeleteCommandToVehiculoId($command); if ($this->idPort->getById($id)===null){ throw VehiculoNotFoundException::becauseIdWasNotFound($id->value()); } $this->deletePort->delete($id); } }

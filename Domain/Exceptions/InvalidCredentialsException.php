@@ -1,0 +1,3 @@
+<?php
+declare(strict_types=1);
+final class InvalidCredentialsException extends RuntimeException { public static function becauseCredentialsAreInvalid(): self { return new self('Correo o contraseña incorrectos.'); } public static function becauseUserIsNotActive(): self { return new self('Tu cuenta no está activa. Contacta al administrador.'); } }

@@ -25,3 +25,6 @@ Proyecto base alineado con las guías del curso:
 - feature/recuperacion-password
 - feature/crudl-vehiculo
 - docs/pdf-entrega
+
+## Recuperacion de contrasena
+Se implemento recuperacion de contrasena mediante correo y contrasena temporal.

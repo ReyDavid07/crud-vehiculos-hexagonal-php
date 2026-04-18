@@ -27,6 +27,9 @@ Proyecto base alineado con las guías del curso:
 - docs/pdf-entrega
 
 
+## Modulo Vehiculos
+Se implemento CRUDL de vehiculos con persistencia en MySQL.
+=======
 ## Recuperacion de contrasena
 Se implemento recuperacion de contrasena mediante correo y contrasena temporal.
 =======
@@ -35,5 +38,6 @@ Se implemento inicio de sesion con validacion de credenciales y sesiones PHP.
 =======
 ## Modulo Usuarios
 Se implemento CRUD de usuarios siguiendo la guia y arquitectura hexagonal.
+
 
 
